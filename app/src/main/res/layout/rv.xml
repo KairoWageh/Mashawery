@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/card_view"
+
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+card_view:cardUseCompatPadding="true"
+card_view:cardCornerRadius="8dp"
+card_view:cardBackgroundColor="@android:color/transparent"
+
+card_view:cardElevation="20dp"
+android:layout_marginBottom="16dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/com_facebook_device_auth_text"
+    android:paddingBottom="4dp"
+
+    >
+
+
+    <TextView
+        android:id="@+id/pFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameview"
+        android:text="From"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/pTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pFrom"
+        android:text="to"
+        />
+
+    <TextView
+        android:id="@+id/pTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pTo"
+        android:text="time"
+        />
+
+    <TextView
+        android:id="@+id/pdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pTime"
+        android:text="date"
+        />
+
+    <TextView
+        android:id="@+id/nameview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:text="Name"
+        android:textSize="30sp"
+
+         />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="delete" />
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>
